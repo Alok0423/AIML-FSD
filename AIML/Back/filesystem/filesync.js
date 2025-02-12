@@ -9,7 +9,7 @@ const read = async ()=>{
 }
 const write = async ()=>{
     try{
-        await fs.readFile("./data2.txt","this is my new file","utf-8");
+        await fs.writeFile("./data2.txt","this is my new file","utf-8");
     } catch(error) {
         console.log(error.message)
     }
